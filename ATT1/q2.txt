@@ -1,0 +1,48 @@
+IFPI///
+
+a) Digite apenas o h1 abaixo omitindo a estrutura básica:
+<h1>Hello world</h1>
+
+ele reclama com dois erros e um warning.
+O warning é só um aviso de que a gente não declarou qual o idioma da página (tá faltando o lang).
+Já os erros são porque a página tá sem a "casca" básica: o validador sente falta do <!DOCTYPE html> 
+pra saber que é HTML5, e também dá erro porque toda página web precisa obrigatoriamente ter um <title>
+
+
+
+b) Adicione as tags doctype e html:
+<!DOCTYPE html>
+<html>
+<h1>Hello world</h1>
+</html>
+
+Analise o resultado: 1 warning e 1 erro
+adicionando o doctype, aquele primeiro erro sumiu. Mas o validador ainda acusa 1 warning e 1 erro.
+O warning continua lá porque a gente abriu o <html> mas esqueceu de botar o idioma nele.
+E o erro que sobrou é porque a gente continua sem a tag <title>.
+
+
+c) Adicione as tags:
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+</head>
+<h1>Hello world</h1>
+</html>
+Analise o resultado: 1 erro.
+
+abriu o <head>, mas a regra do HTML diz que dentro do cabeçalho tem que ter um <title>
+
+
+d) Adiciona a tag title:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>
+Hello world
+</title>
+</head>
+<h1>Hello world</h1>
+</html
+
+porque o próprio navegador injeta ele na hora de montar a tela. deixando o <body> opcional .
