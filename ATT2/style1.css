@@ -1,33 +1,33 @@
 /* Estilo para o Mini Blog de Tecnologia */
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFFFFF; /* Branco */
-    color: #011F26; /* Azul muito escuro */
+    background-color: #FFFFFF;
+    color: #011F26;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: #025E73; /* Azul petróleo */
+    color: #025E73;
     text-align: center;
 }
 
 h2 {
-    color: #A5A692; /* Cinza esverdeado */
+    color: #A5A692;
     text-align: left;
 }
 
 p {
-    color: #011F26; /* Azul muito escuro */
+    color: #011F26;
     text-align: justify;
 }
 
 p.autor {
-    color: #BFB78F; /* Bege */
+    color: #BFB78F;
     font-style: italic;
 }
 
 p.separador {
     text-align: center;
-    color: #025E73; /* Azul petróleo */
+    color: #025E73;
 }

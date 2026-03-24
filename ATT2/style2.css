@@ -1,33 +1,33 @@
 /* Estilo para o Mini Blog com paleta do Adobe Color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F4F1DE; /* Bege claro */
-    color: #3D405B; /* Azul escuro acinzentado */
+    background-color: #F4F1DE;
+    color: #3D405B;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: #81B29A; /* Verde suave */
+    color: #81B29A;
     text-align: center;
 }
 
 h2 {
-    color: #E07A5F; /* Vermelho terroso */
+    color: #E07A5F;
     text-align: left;
 }
 
 p {
-    color: #3D405B; /* Azul escuro acinzentado */
+    color: #3D405B;
     text-align: justify;
 }
 
 p.autor {
-    color: #F2CC8F; /* Amarelo suave */
+    color: #F2CC8F;
     font-style: italic;
 }
 
 p.separador {
     text-align: center;
-    color: #81B29A; /* Verde suave */
+    color: #81B29A;
 }
