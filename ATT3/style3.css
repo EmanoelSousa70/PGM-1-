@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFFFFF, #CCCCCC); /* Gradiente de branco para cinza */
+    color: #000000; /* Preto */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333333; /* Cinza escuro */
+    text-align: center;
+}
+
+h2 {
+    color: #666666; /* Cinza médio */
+    text-align: left;
+}
+
+p {
+    color: #000000; /* Preto */
+    text-align: justify;
+}
+
+p.autor {
+    color: #999999; /* Cinza claro */
+    font-style: italic;
+}
+
+p.separador {
+    text-align: center;
+    color: #333333; /* Cinza escuro */
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Blog de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="blog">
+        <h1>Mini Blog de Tecnologia</h1>
+
+        <div class="post">
+            <h2>Exemplo de Códigos em Python</h2>
+            <pre>
+def imprimir_padrao(num_linhas):
+    for i in range(num_linhas):
+        for num_colunas in range(num_linhas-i):
+            print("*", end="")
+        print()
+            </pre>
+            <p class="autor">Autor: Emanoel | Data: 17/03/2026</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Texto Lorem Ipsum</h2>
+            <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec arcu nec justo tincidunt tincidunt. Nullam vehicula, nisl nec tincidunt tincidunt, nunc nisl vehicula nunc, nec tincidunt nunc nisl nec nunc. Donec tincidunt tincidunt nisl nec tincidunt. Nullam vehicula tincidunt nunc.</p>
+            <p class="autor">Autor: Emanoel | Data: 19/03/2026</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Exemplo de Fontes com Pesos</h2>
+            <p class="p1">Texto com peso 700 (negrito leve).</p>
+            <p class="p2">Texto com peso 900 (negrito forte).</p>
+            <p class="autor">Autor: Emanoel | Data: 20/03/2026</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Exemplo de Fontes com Inclinação</h2>
+            <p class="p3">Texto com inclinação de 10 graus.</p>
+            <p class="p4">Texto com inclinação de 20 graus.</p>
+            <p class="autor">Autor: Emanoel | Data: 21/03/2026</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h3>Imagem baixa resolução</h3>
+            <img class="img-teste" src="https://i.postimg.cc/mczCQLTB/baixa.jpg" alt="imagem de baixa resolução">
+            <p>Imagem leve e rápida.</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h3>Imagem média resolução</h3>
+            <img class="img-teste" src="https://i.postimg.cc/qthy8Jpp/medi.jpg" alt="imagem de média resolução">
+            <p>Equilíbrio entre qualidade e desempenho.</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h3>Imagem alta resolução</h3>
+            <img class="img-teste" src="https://i.postimg.cc/bvp5csyw/altaq.jpg" alt="imagem de alta resolução">
+            <p>Alta qualidade, maior tempo de carregamento.</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Imagens Responsivas com CSS</h2>
+            <div>
+                <h3>Exemplo 1: max-width e height auto</h3>
+                <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/pokemon/grookey.jpg" alt="Exemplo de imagem responsiva" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="img-box">
+                <h3>Exemplo 2: Aspect Ratio</h3>
+                <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/pokemon/scorbunny.jpg" alt="Exemplo com aspect ratio">
+            </div>
+            <div>
+                <h3>Exemplo 3: Object Fit</h3>
+                <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/pokemon/sobble.jpg" alt="Exemplo com object-fit" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <p class="autor">Autor: Emanoel | Data: 22/03/2026</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Imagens Responsivas com srcset e picture</h2>
+            <div>
+                <h3>Exemplo 1: srcset</h3>
+                <img
+                    src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/pokemon/detective-pikachu.jpg"
+                    srcset="
+                        https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/pokemon/detective-pikachu.jpg 480w,
+                        https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-in-the-wild.png 800w,
+                        https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/sword-shield/pokemon-gym.png 1200w"
+                    sizes="(max-width: 600px) 100vw,
+                           (max-width: 900px) 80vw,
+                           1200px"
+                    alt="Paisagem">
+            </div>
+            <div>
+                <h3>Exemplo 2: picture</h3>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/animation/team-rocket.png">
+                    <source media="(max-width: 1024px)" srcset="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg">
+                    <img src="https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/pokemon/detective-pikachu.jpg" alt="Banner promocional">
+                </picture>
+            </div>
+            <p class="autor">Autor: Emanoel | Data: 23/03/2026</p>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Minhas Bebidas Favoritas</h2>
+            <ol>
+                <li>☕ Café expresso intenso</li>
+                <li>Cappuccino cremoso</li>
+                <li>Chocolate quente especial</li>
+                <li>Chá de hortelã</li>
+            </ol>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Lista Aninhada de Tarefas</h2>
+            <ol>
+                <li>
+                    Aprender HTML
+                    <ul>
+                        <li>Revisar estrutura básica</li>
+                        <li>Criar página com títulos</li>
+                        <li>Inserir parágrafos e listas</li>
+                    </ul>
+                </li>
+                <li>
+                    Aprender CSS
+                    <ul>
+                        <li>Aplicar cores e fontes</li>
+                        <li>Customizar elementos</li>
+                        <li>Ajustar margens e espaçamentos</li>
+                    </ul>
+                </li>
+                <li>
+                    Aprender JavaScript
+                    <ul>
+                        <li>Criar botões de teste</li>
+                        <li>Mostrar mensagens com alert</li>
+                        <li>Alterar conteúdo de um elemento</li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="separador">***</p>
+        </div>
+
+        <div class="post">
+            <h2>Exemplo de Tabela Complexa</h2>
+            <table>
+                <caption>Relatório de Vendas</caption>
+                <colgroup>
+                    <col span="1" style="background-color: #f2f2f2;">
+                    <col span="2" style="background-color: #e6f7ff;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notebook</td>
+                        <td>10</td>
+                        <td>R$ 5.000,00</td>
+                    </tr>
+                    <tr>
+                        <td>Smartphone</td>
+                        <td>20</td>
+                        <td>R$ 2.000,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>R$ 90.000,00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="post">
+            <h2>Formulário de Contato</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <aside class="additional-content">
+        <h3>Curiosidades sobre Tecnologia</h3>
+        <p>Você sabia que o primeiro computador eletrônico, o ENIAC, pesava mais de 27 toneladas?</p>
+        <p>Atualmente, um smartphone tem mais poder de processamento do que os computadores usados na missão Apollo 11.</p>
+    </aside>
+
+    <nav class="mobile-menu">
+        <button class="menu-toggle">☰</button>
+        <ul class="menu-items">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

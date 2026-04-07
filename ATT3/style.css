@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root {
+    --color-primary: #025E73;
+    --color-secondary: #011F26;
+    --color-background: #FFFFFF;
+    --color-accent: #A5A692;
+    --font-size-base: 1rem;
+    --font-size-large: 3rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 0.8rem;
+    --space-small: 10px;
+    --space-medium: 15px;
+    --space-large: 20px;
+    --radius-default: 5px;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    margin: 0;
+    padding: var(--space-large);
+    font-size: var(--font-size-base);
+}
+
+.blog {
+    width: 70%;
+    margin: auto;
+    background-color: var(--color-background);
+    padding: var(--space-large);
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    padding: var(--space-small);
+    font-size: var(--font-size-large);
+    letter-spacing: 0.5rem;
+}
+
+.post {
+    background-color: var(--color-accent);
+    padding: var(--space-medium);
+    margin-top: var(--space-medium);
+}
+
+h2 {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium);
+}
+
+.autor {
+    font-style: italic;
+    font-size: var(--font-size-small);
+}
+
+p, label, input, textarea, button {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: var(--space-small);
+    border-radius: var(--radius-default);
+    cursor: pointer;
+}
+
+.additional-content {
+    background-color: var(--color-accent);
+    padding: var(--space-medium);
+    margin-top: var(--space-medium);
+    border-radius: var(--radius-default);
+    position: sticky;
+    top: var(--space-large);
+}
+
+.additional-content h3 {
+    color: var(--color-primary);
+    font-size: var(--font-size-medium);
+}
+
+.additional-content p {
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+.mobile-menu {
+    display: none;
+    position: relative;
+}
+
+.menu-toggle {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border: none;
+    padding: var(--space-small);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-secondary);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.menu-items li {
+    border-bottom: 1px solid var(--color-primary);
+}
+
+.menu-items a {
+    color: var(--color-background);
+    text-decoration: none;
+    display: block;
+    padding: var(--space-small);
+}
+
+.menu-toggle.active + .menu-items {
+    display: block;
+}
+
+.img-box {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+}
