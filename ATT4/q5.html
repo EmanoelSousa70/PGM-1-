@@ -1,0 +1,18 @@
+  <!-- Adicionando explicação sobre textContent, innerText e innerHTML -->
+<section id="propriedades-html">
+  <h2>Diferença entre textContent, innerText e innerHTML</h2>
+  <p><strong>textContent:</strong> Retorna ou define o conteúdo de texto de um elemento, incluindo os espaços em branco e sem considerar o estilo ou visibilidade. Ele ignora qualquer HTML presente.</p>
+  <pre><code>// Exemplo de uso:
+const elemento = document.getElementById('exemplo');
+elemento.textContent = 'Novo texto';</code></pre>
+
+  <p><strong>innerText:</strong> Retorna ou define o conteúdo de texto visível de um elemento, respeitando o estilo CSS e a visibilidade. Ele também ignora HTML.</p>
+  <pre><code>// Exemplo de uso:
+const elemento = document.getElementById('exemplo');
+elemento.innerText = 'Texto visível';</code></pre>
+
+  <p><strong>innerHTML:</strong> Retorna ou define o conteúdo HTML de um elemento, permitindo a inclusão de tags HTML.</p>
+  <pre><code>// Exemplo de uso:
+const elemento = document.getElementById('exemplo');
+elemento.innerHTML = '<strong>Texto em negrito</strong>';</code></pre>
+</section>
