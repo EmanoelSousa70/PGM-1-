@@ -1,20 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<script src="scripts.js" defer></script>
+<title>Exercícios DOM 02</title>
+
 <link rel="stylesheet" href="estilos.css">
+<script src="scripts.js" defer></script>
 </head>
+
 <body>
-    <button id="botaoErro">Mostrar Erro</button>
-    <div id="mensagemErro" class="oculto">O campo deve ser preenchido</div>
 
-    <label for="caixaDeTexto">Digite o texto:</label>
-    <input type="text" id="caixaDeTexto">
-    <button id="botaoExibir">Exibir</button>
-    <div id="conteudo"></div>
+<h1>Questão 1 e 2</h1>
+
+<button id="botaoErro">Mostrar Erro</button>
+<div id="mensagemErro" class="oculto"></div>
+
+<br><br>
+
+<label for="caixaDeTexto">Digite o texto:</label>
+<input type="text" id="caixaDeTexto">
+
+<button id="botaoExibir">Exibir</button>
+
+<div id="conteudo"></div>
+
+<hr>
+
+<h1>Questão 3 - Taxa de Engajamento</h1>
+
+<label>Número de Interações:</label>
+<input type="text" id="interacoes">
+
+<label>Número de Visualizações:</label>
+<input type="text" id="visualizacoes">
+
+<button id="calcularEngajamento">Calcular</button>
+
+<div id="erroEngajamento" class="oculto"></div>
+
+<div id="resultadoEngajamento"></div>
+
+<hr>
+
+<h1>Questão 4 - Upload de Imagem</h1>
+
+<input type="file" id="uploadImagem" accept="image/*">
+
+<button id="carregarImagem">Carregar Imagem</button>
+
+<div id="resultado"></div>
+
+<hr>
+
+<h1>Questão 5 - Select de Imagens</h1>
+
+<select id="selectImagem">
+<option value="">Selecione</option>
+
+<option value="https://picsum.photos/id/10/300/200">
+Imagem 1
+</option>
+
+<option value="https://picsum.photos/id/20/300/200">
+Imagem 2
+</option>
+
+<option value=" ">
+Imagem 3
+</option>
+
+</select>
+
+<div id="imagemSelecionada"></div>
+
+<hr>
+
+<h1>Questão 6 - Redes Sociais</h1>
+
+<div>
+<input type="checkbox" name="redesSociais" value="Facebook">
+Facebook
+</div>
+
+<div>
+<input type="checkbox" name="redesSociais" value="Twitter">
+Twitter
+</div>
+
+<div>
+<input type="checkbox" name="redesSociais" value="Instagram">
+Instagram
+</div>
+
+<div>
+<input type="checkbox" name="redesSociais" value="LinkedIn">
+LinkedIn
+</div>
+
+<div>
+<input type="checkbox" name="redesSociais" value="TikTok">
+TikTok
+</div>
+
+<button id="enviarBtn">
+Enviar Seleção
+</button>
+
+<div id="erroRedes" class="oculto"></div>
+
+<div id="redesSelecionadas"></div>
+
+<hr>
+
+<h1>Questão 7, 8 e 9 - Hashtags</h1>
+
+<input type="text" id="hashtagInput">
+
+<button id="adicionarHashtag">
+Adicionar
+</button>
+
+<button id="removerHashtag">
+Remover Selecionada
+</button>
+
+<div id="erroHashtag" class="oculto"></div>
+
+<br><br>
+
+<select id="listaHashtags" size="5"></select>
+
+<hr>
+
+<h1>Questão 10 e 11 - Carteira</h1>
+
+<div class="containerCarteira">
+
+<div>
+
+<label>Ativos Disponíveis</label>
+
+<br>
+
+<select id="ativosDisponiveis" size="10" multiple>
+
+<option value="AAPL">Apple</option>
+<option value="GOOGL">Google</option>
+<option value="AMZN">Amazon</option>
+<option value="MSFT">Microsoft</option>
+<option value="TSLA">Tesla</option>
+<option value="META">Meta</option>
+
+</select>
+
+</div>
+
+<div class="botoesCarteira">
+
+<button id="moverDireita">
+>
+</button>
+
+<button id="moverEsquerda">
+<
+</button>
+
+</div>
+
+<div>
+
+<label>Carteira</label>
+
+<br>
+
+<select id="carteiraInvestimentos" size="10" multiple>
+</select>
+
+</div>
+
+</div>
+
+<div id="erroCarteira" class="oculto"></div>
+
 </body>
-
 </html>
