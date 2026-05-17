@@ -7,11 +7,6 @@ function mostrarErro(mensagem, idElemento) {
   }, 3000);
 }
 
-
-
-
-
-
 // QUESTÃO 1 E 2
 
 document.querySelector('#botaoErro').addEventListener('click', function() {
@@ -31,12 +26,6 @@ function exibirConteudo() {
   }
   document.querySelector('#conteudo').innerHTML = texto;
 }
-
-
-
-
-
-
 
 // QUESTÃO 3
 
@@ -62,11 +51,6 @@ function calcularEngajamento() {
 }
 
 
-
-
-
-
-
 // QUESTÃO 4
 
 document.querySelector('#carregarImagem')
@@ -87,12 +71,6 @@ function carregarImagem() {
   resultado.appendChild(img);
 }
 
-
-
-
-
-
-
 // QUESTÃO 5
 
 document.querySelector('#selectImagem')
@@ -111,12 +89,6 @@ function trocarImagem() {
   img.src = endereco;
   div.appendChild(img);
 }
-
-
-
-
-
-
 
 // QUESTÃO 6
 
@@ -160,13 +132,6 @@ document.querySelector('#redesSelecionadas')
 selecionadas.join(', ');
 
 }
-
-
-
-
-
-
-
 
 // QUESTÃO 7 8 9
 
@@ -254,7 +219,6 @@ input.value = '';
 }
 
 
-
 function removerHashtag(){
 
 var select =
@@ -271,13 +235,6 @@ select.removeChild(selecionada);
 
 }
 
-
-
-
-
-
-
-
 // QUESTÃO 10 E 11
 
 document.querySelector('#moverDireita')
@@ -289,7 +246,6 @@ moverItens(
 );
 
 });
-
 
 document.querySelector('#moverEsquerda')
 .addEventListener('click', function(){
